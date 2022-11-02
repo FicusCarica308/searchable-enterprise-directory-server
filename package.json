@@ -1,0 +1,28 @@
+{
+  "name": "searchable-enterprise-directory-server",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Hackathon: Searchable Enterprise Directory",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FicusCarica308/searchable-enterprise-directory-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FicusCarica308/searchable-enterprise-directory-server/issues"
+  },
+  "homepage": "https://github.com/FicusCarica308/searchable-enterprise-directory-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
