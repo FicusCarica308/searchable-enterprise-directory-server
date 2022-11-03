@@ -29,8 +29,7 @@ const employeeController = {
     })
   },
 
-  // Gets a single employee (either by crednetials or Document ID)
-  /* Can take USERNAME & PASSWORD schema fields or _id: ObjectId('') */
+  // Gets a single employee by crednetials (EMAIL & PASSWORD)
   getEmployeeUser(req, res) {
     Employee.findOne({EMAIL: req.body.email, PASSWORD: req.body.password}, (err, employee) => {
       if (err || !employee ){
@@ -44,13 +43,12 @@ const employeeController = {
 
 
   // Gets a single employee (either by crednetials or Document ID)
-  /* Can take USERNAME & PASSWORD schema fields or _id: ObjectId('') */
   /* ARGUMENTS PASSED MUST BE IN CAPITAL NOTATION EX. NAME, LOCATION not name, location*/
   // TODO make sure that arguments passed into req.body are valid
   getEmployees(req, res) {
     Employee.find({...req.body}, (err, employees) => {
       if (err){
-          res.status(404).send('Employee not found !');
+          res.status(404).send('Employees not found !');
       } else {
           res.send(employeeCleaner.cleanForDisplay(employees, req.params.currentUserDocumentId, req.params.type));
       }
