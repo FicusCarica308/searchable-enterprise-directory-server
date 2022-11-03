@@ -3,7 +3,6 @@ import employeeController from './employee-controller.js'
 
 let employeeRouter = express.Router();
 
-// POST /api/employees -- posts an employee
 /**
  * POST /api/employees -- creates an employee in the database
  * Valid Arguments passed in req.body...
@@ -17,7 +16,6 @@ let employeeRouter = express.Router();
  *  > EMAIL: (String, The employees work email) Format = (email@domain.com)
  *  > PASSWORD: (String, The employees provided password)
  */
-// ARGUMENTS PASSED IN BODY MUST BE lowercase notation Ex. name, email, password NOT NAME, EMAIL, PASSWORD
 employeeRouter.post('/', (req, res) => {
   console.log('POST request received');
   employeeController.postEmployee(req, res);
