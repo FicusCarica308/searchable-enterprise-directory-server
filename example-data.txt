@@ -1,0 +1,112 @@
+HR:
+
+{
+    "name": "Cheese, Crackers",
+    "phone": "252-335-7949",
+    "role": "Front-end Engineer",
+    "location": "Hartford, CT",
+    "salary": "95000",
+    "type": "HR",
+    "superiors_id": "N/A",
+    "email": "cool2@gmail.com",
+    "password": "cool2"
+}
+
+{
+    "name": "Cool, Cars",
+    "phone": "232-894-7373",
+    "role": "Milk Man",
+    "location": "Hartford, CT",
+    "salary": "80000",
+    "type": "HR",
+    "superiors_id": "N/A",
+    "email": "cool1@gmail.com",
+    "password": "cool1"
+}
+
+
+{
+    "name": "John, Doe",
+    "phone": "255-344-7493",
+    "role": "Grocery Delivery Manager",
+    "location": "Hartford, CT",
+    "salary": "50000",
+    "type": "HR",
+    "superiors_id": "N/A",
+    "email": "cool3@gmail.com",
+    "password": "cool3"
+}
+
+Managers:
+
+{
+    "name": "Manny, Iscool",
+    "phone": "233-444-9999",
+    "role": "Lord of the universe",
+    "location": "New Haven, CT",
+    "salary": "150000",
+    "type": "MANAGER",
+    "superiors_id": "N/A",
+    "email": "cool4@gmail.com",
+    "password": "cool4"
+}
+
+<Manny, Iscool is Matans superior>
+{
+    "name": "Matan, Iscool",
+    "phone": "333-791-4536",
+    "role": "Lord of time",
+    "location": "New Haven, CT",
+    "salary": "145371",
+    "type": "MANAGER",
+    "superiors_id": "63652e78225e2582c261594b",
+    "email": "cool5@gmail.com",
+    "password": "cool5"
+}
+
+Employees:
+{
+    "name": "Coffee, Iscool",
+    "phone": "344-734-9873",
+    "role": "Coffee Drinker",
+    "location": "New Haven, CT",
+    "salary": "130000",
+    "type": "EMPLOYEE",
+    "superiors_id": "63652e78225e2582c261594b",
+    "email": "cool6@gmail.com",
+    "password": "cool6"
+}
+{
+    "name": "Applejuice, Iscool",
+    "phone": "322-722-4522",
+    "role": "Applejuice Drinker",
+    "location": "New Haven, CT",
+    "salary": "130100",
+    "type": "EMPLOYEE",
+    "superiors_id": "63652e78225e2582c261594b",
+    "email": "cool7@gmail.com",
+    "password": "cool7"
+}
+{
+    "name": "Milk, Iscool",
+    "phone": "355-755-4555",
+    "role": "Lord of time",
+    "location": "Hartford, CT",
+    "salary": "140000",
+    "type": "EMPLOYEE",
+    "superiors_id": "63652eac225e2582c261594d",
+    "email": "cool8@gmail.com",
+    "password": "cool8"
+}
+{
+    "name": "Jerky, Iscool",
+    "phone": "366-766-4566",
+    "role": "Lord of time",
+    "location": "Hartford, CT",
+    "salary": "200000",
+    "type": "EMPLOYEE",
+    "superiors_id": "63652eac225e2582c261594d",
+    "email": "cool9@gmail.com",
+    "password": "cool9"
+}
+
