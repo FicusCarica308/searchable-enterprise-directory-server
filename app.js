@@ -1,9 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import employeeRouter from './employee-routes.js'
+import cors from "cors";
 
 let app = express();
 app.use(express.json());
+app.use(cors());
 
 // Mongoose connection setup
 mongoose.connect('mongodb://localhost:27017/searchable-enterprise-directory-db')
@@ -11,11 +13,5 @@ mongoose.connect('mongodb://localhost:27017/searchable-enterprise-directory-db')
 
 // Router setup
 app.use('/api/employees', employeeRouter);
-
-
-// Route for API
-app.get('/', (req, res) => {
-  res.send('<h1>Hello World</h1>');
-})
 
 app.listen(5555);

@@ -22,8 +22,9 @@ employeeRouter.post('/', (req, res) => {
 })
 
 // GET /api/employees/user -- Gets a user by credentials (SHOULD NOT RETURN USERNAME OR PASSWORD)
-// ARGUMENTS PASSED IN BODY MUST BE lowercase notation Ex. name, email, password NOT NAME, EMAIL, PASSWORD. ONLY PASS IN BODY
-employeeRouter.get('/user', (req, res) => {
+// ARGUMENTS PASSED IN HEADER MUST BE lowercase notation Ex. name, email, password NOT NAME, EMAIL, PASSWORD. ONLY PASS IN BODY
+// TO DO - Change back to get request and use req.headers + base64 encryption for passwords and emails
+employeeRouter.post('/user', (req, res) => {
   console.log('GET request recieved for credentials validation');
   employeeController.getEmployeeUser(req, res);
 })
@@ -35,7 +36,7 @@ employeeRouter.get('/user', (req, res) => {
 //add air traffic controller
 
 // WILL be given the document id of the user 
-employeeRouter.get('/:currentUserDocumentId/:type', (req, res) => {
+employeeRouter.post('/:currentUserDocumentId/:type', (req, res) => {
   console.log('GET request recieved for employees query');
   employeeController.getEmployees(req, res)
 })

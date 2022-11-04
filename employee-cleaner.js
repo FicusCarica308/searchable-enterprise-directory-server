@@ -21,6 +21,7 @@ const employeeCleaner = {
   cleanForDisplay(employees, currentUserDocumentId, type) {
     let returnData = [];
     let modifiedEmployee;
+    console.log(currentUserDocumentId, type);
     for (const employee in employees) {
       modifiedEmployee = employeeCleaner.removeCredentials(employees[employee]);
       if (modifiedEmployee.id != currentUserDocumentId && modifiedEmployee.superiors_id != currentUserDocumentId && type !== 'HR') {

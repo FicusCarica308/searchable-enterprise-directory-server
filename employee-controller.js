@@ -30,10 +30,12 @@ const employeeController = {
   },
 
   // Gets a single employee by crednetials (EMAIL & PASSWORD)
+  // TO DO - wrap .findOne in try/catch and handle error in react app (raise 500)
   getEmployeeUser(req, res) {
+    console.log(req.body.email, req.body.password)
     Employee.findOne({EMAIL: req.body.email, PASSWORD: req.body.password}, (err, employee) => {
       if (err || !employee ){
-          res.status(404).send('Employee not found !');
+          res.status(404).send({err});
       } else {
         res.send(employeeCleaner.removeCredentials(employee));
       }
